@@ -18,13 +18,4 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
-
-    /**
-     * @Route("/custom/{name?}", name="custom")
-     */
-    public function  custom (Request $request)
-    {
-        dump($request);
-        return new Response('<h1>Welcome {{ name }}</h1>');
-    }
 }
