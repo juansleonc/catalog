@@ -1,0 +1,17 @@
+<div class="product-grid2">
+    <div class="product-image2">
+        <a href="{{ path('product_info', {'product': item.id}) }}">
+            <img src="{{ vich_uploader_asset(item, 'imageFile') }}"  height="30" />
+        </a>
+        <ul class="social">
+            <li><a href="{{ path('product_info', {'product': item.id}) }}" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+        <a class="add-to-cart" href="">Add to cart</a>
+    </div>
+    <div class="product-content">
+        <h3 class="title"><a href="{{ path('product_info', {'product': item.id}) }}">{{ item.name }}</a></h3>
+        <span class="price">${{ item.price|number_format(2, '.', ',') }}</span>
+    </div>
+</div>

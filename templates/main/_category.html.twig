@@ -1,0 +1,13 @@
+<div class="product-grid2">
+    <div class="product-image2">
+        <a href="#">
+            <img src="{{ vich_uploader_asset(item, 'imageFile') }}"/>
+            <!--<img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-2.jpeg">-->
+        </a>
+        <a class="add-to-cart" href="{{ path('product_listing', {'category': item.id}) }}">View Products</a>
+    </div>
+    <div class="product-content">
+        <h3 class="title"><a href="{{ path('product_listing', {'category': item.id}) }}">{{ item.name }}</a></h3>
+
+    </div>
+</div>
