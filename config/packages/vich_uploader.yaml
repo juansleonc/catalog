@@ -9,3 +9,10 @@ vich_uploader:
             inject_on_load: false
             delete_on_update: true
             delete_on_remove: true
+        category_images:
+            uri_prefix: /images/categories
+            upload_destination: '%kernel.project_dir%/public/images/categories'
+
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
